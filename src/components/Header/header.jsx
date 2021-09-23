@@ -11,7 +11,7 @@ const Header = () => {
             <div className= {burger ? 'burger burger-active' : 'burger'} onClick = {() => setBurger(!burger)}>
               <span></span>
             </div>
-          <nav className="header__menu header__menu-left">
+          <nav className={burger ? 'header__menu-active header__menu-left header__menu' : 'header__menu header__menu-left'}>
             <ul className={burger ? 'header__list header__list-active' : 'header__list'}>
               <li className="item__list"><a href="#" className="header__link">Home</a></li>
               <li className="item__list"><a href="#" className="header__link">Features</a></li>
@@ -21,11 +21,11 @@ const Header = () => {
           <div className="header__logo">
             <img src={logo} alt="logo" srcset="" />
           </div>
-          <nav className="header__menu header__menu-right">
+          <nav className= {burger ? 'header__menu-active header__menu-right header__menu' : 'header__menu header__menu-right'}>
             <ul className={burger ? 'header__list header__list-active' : 'header__list'}>
               <li className="item__list"><a href="#" className="header__link">Home</a></li>
-              <li className="item__list"><a href="#" className="header__link">Features</a></li>
-              <li className="item__list"><a href="#" className="header__link">Gallary</a></li>
+              <li className="item__list"><a href="#" className="header__link ">Features</a></li>
+              <li className="item__list header__btn"><button className = ' btn'>Log in</button></li>
             </ul>
           </nav>
         </div>

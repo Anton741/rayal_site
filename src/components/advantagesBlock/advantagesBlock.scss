@@ -1,0 +1,63 @@
+.advantages{
+&__main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 500px 0 200px 0; // исправить в конце
+}
+&__title{
+  font-size: 32px;
+  line-height: 45px;
+  margin: 0 0 25px;
+}
+&__dsr{
+  max-width:819px;
+  text-align: center;
+  margin: 0 0 60px;
+}
+&__raw{
+  display:flex;
+}
+&__column{
+  padding: 17px;
+  margin: 0 1.5%;
+  border: 1px solid #00000038;
+  box-shadow: 0px 4px 30px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+}
+}
+.item-advantages{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  &__icon{
+    width:74px;
+    height: 73px;
+    margin:0 0 48px;
+    &-booking{
+      background: url('./booking.svg');
+      background-repeat: no-repeat;
+    }
+    &-interface{
+      background: url('./interface.svg');
+      background-repeat: no-repeat;
+    }
+    &-responsibility{
+      background: url('./responsibility.svg');
+    }
+    &-order{
+      background: url('./order.svg');
+    }
+  }
+  &__title{
+    font-size: 19px;
+    line-height: 36px;
+    margin:0 0 32px;
+    flex-grow: 1;
+  }
+  &__dsr{
+    text-align: center;
+    flex-grow: 1;
+  }
+}
